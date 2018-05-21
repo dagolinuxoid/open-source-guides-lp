@@ -1,0 +1,40 @@
+// common styles
+*
+    box-sizing: border-box
+html, body
+    height: 100%
+    margin: 0
+ul
+    margin: 0
+    padding-left: 0
+body
+    font: 14px/1.5 'Liberation Sans', sans-serif
+    color: #24292e
+// navigation
+.nav-menu
+    max-width: 1012px
+    margin: 0 auto
+.nav-menu__ul
+    list-style: none
+    display: flex
+    border-bottom: 1px #e1e4e8 solid
+    background: #fff
+.nav-menu__li
+    border-right: 1px #e1e4e8 solid
+.nav-menu__a
+    color: #0366d6
+    text-decoration: none
+    display: block
+    padding: 16px
+    transition: all .2s ease-in-out
+.nav-menu__a:hover
+    color: inherit
+    background: #fafbfc
+@media (min-width: 544px)
+    .nav-menu__ul
+        border-bottom: 0
+        justify-content: flex-end
+    .nav-menu__li:first-child
+        border-left: 1px #e1e4e8 solid
+    .nav-menu__a
+        padding: 24px
