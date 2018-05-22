@@ -7,6 +7,9 @@ html, body
 ul
     margin: 0
     padding-left: 0
+h1, h2, h3, h4, h5, h6
+    margin-top: 0
+    margin-bottom: 0
 body
     font: 14px/1.5 'Liberation Sans', sans-serif
     color: #24292e
@@ -30,15 +33,8 @@ body
 .nav-menu__a:hover
     color: inherit
     background: #fafbfc
-@media (min-width: 544px)
-    .nav-menu__ul
-        border-bottom: 0
-        justify-content: flex-end
-    .nav-menu__li:first-child
-        border-left: 1px #e1e4e8 solid
-    .nav-menu__a
-        padding: 24px
 // main content part
+    // header
 .main-part
     background: #f3f3f3
     text-align: center
@@ -54,3 +50,55 @@ body
     font: 300 21px/1.5 Roboto
     color: #586069
     margin: 0 auto 10px
+    // cards
+.cards
+    padding: 0 16px 40px
+    max-width: 1012px
+    margin: 0 auto
+    display: flex
+    flex-flow: row wrap
+    width: 100%
+.card
+    width: 100%
+    margin: 24px 0 0
+    padding: 0 16px
+.card__a
+    display: block
+    background: #fff
+    border-radius: 6px
+    height: 100%
+    border: 1px #e1e4e8 solid
+.card__img
+    height: 200px
+    max-width: 100%
+    padding: 40px 32px 16px
+    vertical-align: top
+.card__text-block
+    padding: 24px
+.card__title
+    font-size: 18px
+    color: #333
+    font-weight: 600
+    line-height: 1.25
+    margin-bottom: 8px
+    font-family: Roboto
+.card__descr
+    color: #586069
+    margin-top: 0
+    margin-bottom: 10px
+    padding: 0 10px
+@media (min-width: 544px)
+    .nav-menu__ul
+        border-bottom: 0
+        justify-content: flex-end
+    .nav-menu__li:first-child
+        border-left: 1px #e1e4e8 solid
+    .nav-menu__a
+        padding: 24px
+    .cards
+        justify-content: center
+    .card
+        width: 80%
+@media (min-width: 768px)
+    .card
+        width: 50%
