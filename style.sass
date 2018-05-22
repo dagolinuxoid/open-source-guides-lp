@@ -10,6 +10,10 @@ ul
 h1, h2, h3, h4, h5, h6
     margin-top: 0
     margin-bottom: 0
+input
+    font-size: inherit
+    font-family: inherit
+    line-height: inherit
 body
     font: 14px/1.5 'Liberation Sans', sans-serif
     color: #24292e
@@ -87,6 +91,56 @@ body
     margin-top: 0
     margin-bottom: 10px
     padding: 0 10px
+// footer
+footer
+    border-top: 1px #e1e4e8 solid
+    padding: 32px 16px 0
+    text-align: center
+    background-color: #fff
+    max-width: 1012px
+    width: 100%
+    margin: 0 auto
+.banners
+    display: flex
+    flex-wrap: wrap
+.banner
+    width: 100%
+    padding: 32px
+    margin-bottom: 24px
+.banner__pic
+    max-height: 50px
+    margin-bottom: 16px
+.banner__title
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 16px
+.banner__descr
+    font-size: 16px
+    margin-bottom: 16px
+.banner__btn
+    font-size: 14px
+    border-radius: 3px
+    border: 1px silver solid
+    display: inline-block
+    padding: 6px 12px
+    color: #0366d6
+    font-weight: 600
+    cursor: pointer
+.banner__btn:hover
+    color: #fff
+    background: #0366d6
+    border: 0
+.banner__input
+    margin: 0 auto 16px
+    padding: 8px 16px
+    display: block
+    height: 40px 
+    border: 1px #e1e4e8 solid
+    width: 83.3%
+.info
+    padding: 32px 0
+    border-top: 1px #e1e4e8 solid
+// media
 @media (min-width: 544px)
     .nav-menu__ul
         border-bottom: 0
@@ -99,6 +153,10 @@ body
         justify-content: center
     .card
         width: 80%
+    .banner
+        width: 50%
+    .banner:first-child
+        border-right: 1px #e1e4e8 solid
 @media (min-width: 768px)
     .card
         width: 50%
